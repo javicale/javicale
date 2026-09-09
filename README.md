@@ -25,10 +25,10 @@ Currently exploring the next evolution of QE through **agentic workflows, AI-ass
 
 ## Featured portfolio
 
-### 🎭 [Playwright Quality Engineering Framework](https://github.com/javicale/playwright)
+### 🎭 [Playwright Quality Engineering Framework](https://github.com/javicale/playwright-quality-engineering)
 A production-minded Playwright + TypeScript reference framework demonstrating UI and API testing, Page Objects, reusable fixtures, evidence, CI execution, cross-browser coverage and maintainable test architecture.
 
-### 🧭 [Quality Engineering Strategy & Playbook](https://github.com/javicale/pros)
+### 🧭 [Quality Engineering Strategy & Playbook](https://github.com/javicale/quality-engineering-playbook)
 A practical collection of QA/QE strategy material: test strategy, validation framework, risk-based testing, evidence standards and an Agentic Quality Engineering roadmap.
 
 ---
