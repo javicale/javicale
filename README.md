@@ -6,7 +6,7 @@ I build quality systems, not just test cases.
 
 With **17+ years in Software Quality Assurance and Quality Engineering**, I focus on turning quality into an engineering capability: clear strategy, risk-based validation, automation, observability, evidence, and release decisions that teams can trust.
 
-Currently exploring the next evolution of QE through **agentic workflows, AI-assisted testing, test observability, and evidence-driven release decisions**.
+Currently exploring how **agentic workflows, MCP, AI-assisted testing, test observability and evidence-driven release decisions** could complement established Quality Engineering practices.
 
 ---
 
@@ -18,15 +18,15 @@ Currently exploring the next evolution of QE through **agentic workflows, AI-ass
 - **CI/CD Quality Gates** — automated validation, evidence collection and release-readiness signals.
 - **Performance & API Testing** — JMeter, Locust, Postman and service-level validation.
 - **Observability for Testing** — traces, logs, metrics, test evidence and failure diagnostics.
-- **AI-assisted / Agentic QE** — agent planning, MCP context, agent evaluation, execution gating and risk-based release decisions.
+- **AI-assisted QE research** — currently learning and experimenting with agents, MCP, evals, execution gating and human-governed release decisions.
 - **QA Leadership** — scalable processes, quality metrics, mentoring and cross-functional quality ownership.
 
 ---
 
 ## Featured portfolio
 
-### 🤖 [Agentic Quality Engineering](https://github.com/javicale/agentic-quality-engineering)
-An executable Agentic QE reference system with **OpenAI Agents SDK + MCP planning**, deterministic agent evals, a pre-execution trust gate, differential data testing, observability, structured evidence and risk-based release decisions. CI validates the deterministic core and Agent/MCP contracts without requiring a live model call.
+### 🧪 [Agentic Quality Engineering Lab](https://github.com/javicale/agentic-quality-engineering)
+An exploratory R&D / learning lab where I investigate how agents, MCP, deterministic evals, differential testing, observability and evidence could augment Quality Engineering. The repository keeps executable experiments, findings, limitations and learning notes rather than presenting the work as a production-ready Agentic AI framework.
 
 ### 🎭 [Playwright Quality Engineering Framework](https://github.com/javicale/playwright-quality-engineering)
 A production-minded Playwright + TypeScript reference framework demonstrating UI and API testing, Page Objects, reusable fixtures, evidence, CI execution, cross-browser coverage and maintainable test architecture.
@@ -36,35 +36,37 @@ A practical collection of QA/QE strategy material: test strategy, validation fra
 
 ---
 
-## Agentic Quality Engineering
+## Current R&D — Agentic Quality Engineering
 
-My current R&D direction is a Quality Engineering pipeline where agents can increase validation capacity while remaining auditable, evaluated and human-governed:
+This is an **active learning direction**, not a claim of mature Agentic AI expertise.
+
+I am investigating one question from a Quality Engineering perspective:
+
+> **Where can probabilistic AI increase validation capacity without weakening deterministic controls, evidence or human accountability?**
+
+The working hypothesis being explored is:
 
 ```text
 Change / Risk
    ↓
-Read-only MCP Context
+Context / Tools
    ↓
-Agent Validation Plan
+Agent proposes a Validation Plan
    ↓
-Deterministic Agent Evals
+Deterministic Eval
    ↓
 Execution Gate
    ↓
-Automated / Differential Testing
+Deterministic Validation
    ↓
-Observability
+Observability + Evidence
    ↓
-Evidence
+Risk-based Release Signal
    ↓
-Risk-based Release Decision
-   ↓
-Human Approval Boundary
+Human Decision
 ```
 
-The objective is not to replace QA judgment. It is to give engineers **better evidence, faster feedback and stronger release decisions** while preventing probabilistic agent output from silently becoming release authority.
-
-The architecture is implemented as a public, executable reference system in [agentic-quality-engineering](https://github.com/javicale/agentic-quality-engineering).
+The public [Agentic Quality Engineering Lab](https://github.com/javicale/agentic-quality-engineering) records the experiments, what failed, what I learned, current limitations and the next research questions.
 
 ---
 
@@ -107,14 +109,14 @@ I value:
 
 ## Current focus
 
-- Agentic Quality Engineering
-- MCP + testing agents
-- Agent evals and execution gating
-- Test observability and evidence pipelines
-- Playwright at scale
-- ETL and data-quality automation
-- AI-assisted STLC
-- Risk-based release intelligence
+- Quality Engineering strategy and governance
+- Playwright and maintainable test automation
+- ETL and data-quality validation
+- Test observability and evidence
+- AI-assisted QA
+- Learning Agentic QE fundamentals
+- MCP and testing-agent experiments
+- Evals and human-in-the-loop quality gates
 
 ---
 
@@ -125,4 +127,4 @@ I value:
 
 ---
 
-> **Portfolio philosophy:** every public repository here should demonstrate a Quality Engineering decision, technique or capability — not exist only to increase the repository count.
+> **Portfolio philosophy:** every public repository here should demonstrate a Quality Engineering decision, technique, experiment or capability — not exist only to increase the repository count.
