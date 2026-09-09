@@ -14,7 +14,7 @@ Currently exploring how **agentic workflows, MCP, AI-assisted testing, test obse
 
 - **Quality Engineering Strategy** — QA governance, test strategy, STLC, shift-left and risk-based testing.
 - **Test Automation** — Playwright, API testing, regression strategy and maintainable automation architecture.
-- **Data & ETL Quality** — source-to-target validation, reconciliation, transformation rules and differential testing.
+- **Data & ETL Quality** — source-to-target validation, SQL/database reconciliation, transformation rules and differential testing.
 - **CI/CD Quality Gates** — automated validation, evidence collection and release-readiness signals.
 - **Performance & API Testing** — JMeter, Locust, Postman and service-level validation.
 - **Observability for Testing** — traces, logs, metrics, test evidence and failure diagnostics.
@@ -26,7 +26,7 @@ Currently exploring how **agentic workflows, MCP, AI-assisted testing, test obse
 ## Featured portfolio
 
 ### 🧪 [Agentic Quality Engineering Lab](https://github.com/javicale/agentic-quality-engineering)
-An exploratory R&D / learning lab where I investigate how agents, MCP, deterministic evals, differential testing, observability and evidence could augment Quality Engineering. The repository keeps executable experiments, findings, limitations and learning notes rather than presenting the work as a production-ready Agentic AI framework.
+An exploratory R&D / learning lab where I investigate how agents, MCP, deterministic evals, CSV and **SQL/database differential testing**, observability and evidence could augment Quality Engineering. The current database experiment covers schema drift, row/key reconciliation, duplicate and composite business keys, metadata-only MCP profiles and an environment-backed SQLAlchemy portability boundary. The repository records experiments, findings and limitations rather than presenting the work as a production-ready Agentic AI framework.
 
 ### 🎭 [Playwright Quality Engineering Framework](https://github.com/javicale/playwright-quality-engineering)
 A production-minded Playwright + TypeScript reference framework demonstrating UI and API testing, Page Objects, reusable fixtures, evidence, CI execution, cross-browser coverage and maintainable test architecture.
@@ -49,7 +49,7 @@ The working hypothesis being explored is:
 ```text
 Change / Risk
    ↓
-Context / Tools
+Read-only Context / MCP Tools
    ↓
 Agent proposes a Validation Plan
    ↓
@@ -57,7 +57,7 @@ Deterministic Eval
    ↓
 Execution Gate
    ↓
-Deterministic Validation
+CSV / SQL Differential Validation
    ↓
 Observability + Evidence
    ↓
@@ -77,6 +77,9 @@ Playwright · Postman · JMeter · Locust · BrowserStack · API Testing · E2E 
 
 **Engineering**  
 TypeScript · JavaScript · C# · Python · Java · SQL · PL/SQL · HTML
+
+**Data & Database Quality**  
+Source-to-target Reconciliation · SQL Differential Testing · Schema Drift · Data Integrity · SQLAlchemy
 
 **Platform & Delivery**  
 Docker · GitHub Actions · GitLab CI/CD · CircleCI · Linux · Windows · macOS
@@ -111,12 +114,13 @@ I value:
 
 - Quality Engineering strategy and governance
 - Playwright and maintainable test automation
-- ETL and data-quality validation
+- ETL, SQL and data-quality validation
 - Test observability and evidence
 - AI-assisted QA
 - Learning Agentic QE fundamentals
 - MCP and testing-agent experiments
 - Evals and human-in-the-loop quality gates
+- Database differential validation experiments
 
 ---
 
