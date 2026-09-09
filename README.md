@@ -25,6 +25,9 @@ Currently exploring the next evolution of QE through **agentic workflows, AI-ass
 
 ## Featured portfolio
 
+### 🤖 [Agentic Quality Engineering](https://github.com/javicale/agentic-quality-engineering)
+An executable Python PoC connecting agent evals, differential data testing, test observability, structured evidence and a risk-based release decision engine. Includes a synthetic ETL scenario, automated tests and a GitHub Actions quality gate.
+
 ### 🎭 [Playwright Quality Engineering Framework](https://github.com/javicale/playwright-quality-engineering)
 A production-minded Playwright + TypeScript reference framework demonstrating UI and API testing, Page Objects, reusable fixtures, evidence, CI execution, cross-browser coverage and maintainable test architecture.
 
@@ -54,6 +57,8 @@ Risk-based Release Decision
 ```
 
 The objective is not to replace QA judgment. It is to give engineers **better evidence, faster feedback and stronger release decisions**.
+
+The architecture is now implemented as a public, executable reference PoC in [agentic-quality-engineering](https://github.com/javicale/agentic-quality-engineering).
 
 ---
 
