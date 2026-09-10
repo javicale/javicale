@@ -32,7 +32,7 @@ Currently exploring how **agentic workflows, MCP, AI-assisted testing, test obse
 An exploratory R&D / learning lab investigating how probabilistic agent planning can coexist with deterministic Quality Engineering controls. The current baseline covers MCP context, agent evals, CSV and SQL/database differential testing, schema/key reconciliation, SQLAlchemy portability, structured evidence and **plan-to-execution traceability**. In the final verified live `gpt-5.6-luna` SQL experiment, the agent produced a **90/100 PASS** plan whose **5/5 executable scenarios mapped to registered capabilities and passed**, with 0 deferred/unsupported scenarios before the pipeline reached **GO / LOW**. A negative control proves that an unsupported HIGH scenario forces `NO_GO` even when another differential is green. The repository remains explicitly an R&D lab rather than a production-ready Agentic AI framework.
 
 ### 🔎 [Quality Observability Lab](https://github.com/javicale/quality-observability-lab)
-An R&D / learning experiment correlating Playwright browser execution with OpenTelemetry backend spans, logs, bounded metrics and structured failure evidence. The verified baseline includes a healthy checkout, a deliberate HTTP 500, 13 evidence-gate tests and a passing [GitHub Actions run](https://github.com/javicale/quality-observability-lab/actions/runs/34482765373). Browser evidence, spans and logs share run/trace identifiers; metrics are grouped by scenario and status. The known business failure stays explicit even when the experiment gate passes. Local file exporters keep the lab reproducible without secrets or external services; this is not a production observability platform.
+A completed R&D / learning lab connecting Playwright execution with OpenTelemetry traces, correlated logs, bounded metrics, structured browser evidence and deterministic failure diagnosis. The lab now has two independently verified contracts: local JSON/JSONL evidence with a fail-closed gate, and real **OTLP/HTTP ingestion into a local Grafana LGTM stack**. The final `main` CI run validates both `deterministic-evidence` and `otel-stack-contract`; Tempo returns the exact success/error traces, Loki preserves trace/run correlation, Prometheus exposes the request metric, and Grafana serves the provisioned Quality Observability dashboard. The deliberate HTTP 500 remains a business `FAIL` even when the experiment gate passes. The repository is intentionally closed at this reproducible portfolio scope rather than positioned as a production observability platform.
 
 ### 🎭 [Playwright Quality Engineering Framework](https://github.com/javicale/playwright-quality-engineering)
 A production-minded Playwright + TypeScript reference framework demonstrating UI and API testing, Page Objects, reusable fixtures, evidence, CI execution, cross-browser coverage and maintainable test architecture.
@@ -99,7 +99,7 @@ Source-to-target Reconciliation · SQL Differential Testing · Schema Drift · D
 Docker · GitHub Actions · GitLab CI/CD · CircleCI · Linux · Windows · macOS
 
 **Observability & Analytics**  
-Grafana · Power BI · Logs · Metrics · Traces · Test Evidence
+OpenTelemetry · Grafana · Tempo · Loki · Prometheus · Power BI · Logs · Metrics · Traces · Test Evidence
 
 **Quality & Delivery**  
 Jira · Azure DevOps · STLC · Shift-left · Risk-based Testing · Quality Gates · QA Governance
