@@ -4,6 +4,9 @@
 
 I build quality systems, not just test cases.
 
+**[Explore my Quality Engineering portfolio ↗](https://javier-capa-quality-engineering.javicale.chatgpt.site)**  
+Project case studies, engineering decisions, verified evidence and R&D learning notes.
+
 With **17+ years in Software Quality Assurance and Quality Engineering**, I focus on turning quality into an engineering capability: clear strategy, risk-based validation, automation, observability, evidence, and release decisions that teams can trust.
 
 Currently exploring how **agentic workflows, MCP, AI-assisted testing, test observability and evidence-driven release decisions** could complement established Quality Engineering practices.
