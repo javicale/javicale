@@ -18,7 +18,7 @@ Currently exploring how **agentic workflows, MCP, AI-assisted testing, test obse
 - **CI/CD Quality Gates** — automated validation, evidence collection and release-readiness signals.
 - **Performance & API Testing** — JMeter, Locust, Postman and service-level validation.
 - **Observability for Testing** — traces, logs, metrics, test evidence and failure diagnostics.
-- **AI-assisted QE research** — currently learning and experimenting with agents, MCP, evals, execution gating and human-governed release decisions.
+- **AI-assisted QE research** — experiments with agents, MCP, deterministic evals, execution gating, plan-to-execution traceability and human-governed release decisions.
 - **QA Leadership** — scalable processes, quality metrics, mentoring and cross-functional quality ownership.
 
 ---
@@ -26,7 +26,7 @@ Currently exploring how **agentic workflows, MCP, AI-assisted testing, test obse
 ## Featured portfolio
 
 ### 🧪 [Agentic Quality Engineering Lab](https://github.com/javicale/agentic-quality-engineering)
-An exploratory R&D / learning lab where I investigate how agents, MCP, deterministic evals, CSV and **SQL/database differential testing**, observability and evidence could augment Quality Engineering. The database experiment covers schema drift, row/key reconciliation, duplicate and composite business keys, metadata-only MCP profiles and an environment-backed SQLAlchemy portability boundary. A verified live `gpt-5.6-luna` SQL experiment used metadata-only MCP database context to generate a validation plan that scored **100/100** before deterministic execution reached **GO / LOW**; plan quality and actual execution scope are recorded as separate evidence claims. The repository records experiments, findings and limitations rather than presenting the work as a production-ready Agentic AI framework.
+An exploratory R&D / learning lab investigating how probabilistic agent planning can coexist with deterministic Quality Engineering controls. The current baseline covers MCP context, agent evals, CSV and SQL/database differential testing, schema/key reconciliation, SQLAlchemy portability, structured evidence and **plan-to-execution traceability**. In the final verified live `gpt-5.6-luna` SQL experiment, the agent produced a **90/100 PASS** plan whose **5/5 executable scenarios mapped to registered capabilities and passed**, with 0 deferred/unsupported scenarios before the pipeline reached **GO / LOW**. A negative control proves that an unsupported HIGH scenario forces `NO_GO` even when another differential is green. The repository remains explicitly an R&D lab rather than a production-ready Agentic AI framework.
 
 ### 🎭 [Playwright Quality Engineering Framework](https://github.com/javicale/playwright-quality-engineering)
 A production-minded Playwright + TypeScript reference framework demonstrating UI and API testing, Page Objects, reusable fixtures, evidence, CI execution, cross-browser coverage and maintainable test architecture.
@@ -36,28 +36,34 @@ A practical collection of QA/QE strategy material: test strategy, validation fra
 
 ---
 
-## Current R&D — Agentic Quality Engineering
+## R&D — Agentic Quality Engineering
 
 This is an **active learning direction**, not a claim of mature Agentic AI expertise.
 
-I am investigating one question from a Quality Engineering perspective:
+The research question is:
 
 > **Where can probabilistic AI increase validation capacity without weakening deterministic controls, evidence or human accountability?**
 
-The working hypothesis being explored is:
+The completed V4 learning baseline implements this boundary:
 
 ```text
 Change / Risk
    ↓
 Read-only Context / MCP Tools
    ↓
-Agent proposes a Validation Plan
+Agent proposes Validation Plan
    ↓
 Deterministic Eval
    ↓
-Execution Gate
+Pre-execution Gate
    ↓
-CSV / SQL Differential Validation
+Scenario → Capability Mapping
+   ↓
+CSV / SQL Deterministic Validation
+   ↓
+Plan-to-Execution Traceability
+   ↓
+Coverage Gate
    ↓
 Observability + Evidence
    ↓
@@ -66,9 +72,9 @@ Risk-based Release Signal
 Human Decision
 ```
 
-Verified experiments now include live model planning against both CSV and SQL/database synthetic scenarios. The SQL experiment also records an explicit execution-scope artifact so a strong agent plan is not conflated with proof that every proposed scenario executed.
+The key conclusion is that **plan quality, permission to execute, actual execution coverage and release authority are different claims** and should be independently testable. HIGH/CRITICAL planned scenarios that are unsupported or not executed block release rather than being hidden behind an overall green result.
 
-The public [Agentic Quality Engineering Lab](https://github.com/javicale/agentic-quality-engineering) records the experiments, what failed, what I learned, current limitations and the next research questions.
+The public [Agentic Quality Engineering Lab](https://github.com/javicale/agentic-quality-engineering) preserves the experiments, negative controls, live model evidence, findings and limitations.
 
 ---
 
@@ -119,10 +125,11 @@ I value:
 - ETL, SQL and data-quality validation
 - Test observability and evidence
 - AI-assisted QA
-- Learning Agentic QE fundamentals
-- MCP and testing-agent experiments
-- Evals and human-in-the-loop quality gates
-- Database differential validation experiments
+- Agentic QE learning and experimentation
+- MCP and testing-agent boundaries
+- Deterministic evals and execution gating
+- Plan-to-execution traceability
+- Human-in-the-loop release governance
 
 ---
 
