@@ -26,7 +26,7 @@ Currently exploring how **agentic workflows, MCP, AI-assisted testing, test obse
 ## Featured portfolio
 
 ### 🧪 [Agentic Quality Engineering Lab](https://github.com/javicale/agentic-quality-engineering)
-An exploratory R&D / learning lab where I investigate how agents, MCP, deterministic evals, CSV and **SQL/database differential testing**, observability and evidence could augment Quality Engineering. The current database experiment covers schema drift, row/key reconciliation, duplicate and composite business keys, metadata-only MCP profiles and an environment-backed SQLAlchemy portability boundary. The repository records experiments, findings and limitations rather than presenting the work as a production-ready Agentic AI framework.
+An exploratory R&D / learning lab where I investigate how agents, MCP, deterministic evals, CSV and **SQL/database differential testing**, observability and evidence could augment Quality Engineering. The database experiment covers schema drift, row/key reconciliation, duplicate and composite business keys, metadata-only MCP profiles and an environment-backed SQLAlchemy portability boundary. A verified live `gpt-5.6-luna` SQL experiment used metadata-only MCP database context to generate a validation plan that scored **100/100** before deterministic execution reached **GO / LOW**; plan quality and actual execution scope are recorded as separate evidence claims. The repository records experiments, findings and limitations rather than presenting the work as a production-ready Agentic AI framework.
 
 ### 🎭 [Playwright Quality Engineering Framework](https://github.com/javicale/playwright-quality-engineering)
 A production-minded Playwright + TypeScript reference framework demonstrating UI and API testing, Page Objects, reusable fixtures, evidence, CI execution, cross-browser coverage and maintainable test architecture.
@@ -65,6 +65,8 @@ Risk-based Release Signal
    ↓
 Human Decision
 ```
+
+Verified experiments now include live model planning against both CSV and SQL/database synthetic scenarios. The SQL experiment also records an explicit execution-scope artifact so a strong agent plan is not conflated with proof that every proposed scenario executed.
 
 The public [Agentic Quality Engineering Lab](https://github.com/javicale/agentic-quality-engineering) records the experiments, what failed, what I learned, current limitations and the next research questions.
 
